@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto8</title>
+</head>
+<body>
+    <script>
+        var i=0;
+        var nombre;
+        var  cont=0, cont2 =0,sexo, sueldo;
+        for(; i<10; i++){
+            nombre = window.prompt("Ingrese el nombre");
+            sexo=parseInt(window.prompt("1 = femenino, 2= masculino)"));
+            if(sexo === 1){
+                sueldo = parseFloat(window.prompt("ingrese el sueldo:"));
+                if(sueldo>500){
+                    cont++;
+                }
+            }else if(sexo === 2){
+                sueldo = parseFloat(window.prompt("ingrese el sueldo:"));
+                if (sueldo < 400){
+                    cont2++;
+                }
+            }else {
+                alert("no válido");
+                i=i-1;
+            }
+        }
+        document.write("<p> Usted tiene a"+cont+"mujer/es con un sueldo mayor a $500 <p> Usted tiene a "+cont2+"hombre/s con un sueldo menor a $400");
+    </script>
+</body>
+</html>

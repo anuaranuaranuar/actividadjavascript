@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto6</title>
+</head>
+<body>
+    <script>
+        var salir = true;
+        var cont1 =0;
+        var cont2 =0;
+        var peso;
+
+        while (opcion) {
+            peso = parseInt(window.prompt("ingrese el peso (0 para salir): "));
+            if(peso>80){
+                cont++;
+            }else if(peso<80 && peso>0){
+                cont2++;
+            }else if (peso == 0){
+                salir=false;
+            }
+        }
+        document.write("<p>las personas con  pesos mayores a 80Kg son: "+cont1);
+        document.write("<p>las personas con  pesos menores a 80Kg son: "+cont2);
+    </script>
+</body>
+</html>
