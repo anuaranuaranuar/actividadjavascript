@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto17</title>
+</head>
+<body>
+    <script>
+        var vector = new Array(8);
+        var i =0;
+        var cadena;
+        for(;i<vector.length; i++){
+            cadena = window.prompt("Digite un caracter");
+            if (cadena.toUpperCase() === "A" || cadena.toUpperCase() ==="E"){
+                if(cadena.toUpperCase() === "A"){
+                    vector[i]= 4;
+                }else{
+                    vector[i]= 3;
+                }
+            }else{
+                vector[i]=cadena.toUpperCase();
+            }
+        }
+        i =0;
+        for(; i<vector.length; i++){
+            document.write(vector[i]+" ");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto15</title>
+</head>
+<body>
+    <script>
+        var cont1=0,cont2=0, vector = new Array(10);
+        for(i=0; i<v.length; i++){
+            v[i] = parseInt(window.prompt("ingrse valor para la pocision "+(i+1)));
+        }
+        var numero1 = parseInt(window.prompt("Digite otro número:"));
+        var numero2 = parseInt(window.prompt("Digite otro número:"));
+        for(i=0; i<vector.length; i++){
+            if(vector[i]===numero1){
+                cont1++;
+            }else if(vector[i]===numero2){
+                cont2++;
+            }
+
+        }
+        if(cont!=0 && cont2!=0){
+            document.write("los nuevos numeros se encuentran en el vector");
+        } else if(cont!=0){
+            document.write("El primer número esta en el vector");
+        } else if(cont!=0){
+            document.write("El segundo número esta en el vector");
+        } else{
+            document.write("los nuevos numeros no estan en el vector");
+        }
+        
+    </script>
+</body>
+</html>

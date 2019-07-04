@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto16</title>
+</head>
+<body>
+    <script>
+        var v = new Array(10), cont=0;
+
+        for(i=0; i<vector.length; i++){
+            v[i] = window.prompt("digite un texto");
+            if(v[i].length > v[cont].length){
+                cont = i;
+            }
+        }
+        
+        document.write(v[cont]+"es el texto mas largo, con un total de: "+vector[cont].length);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto12</title>
+</head>
+<body>
+    <script>
+        var n=0, cont1=0, cont2=0;
+        while (n<999) {
+            n = parseInt(window.prompt("ingrese un entero"));
+              if (n< 999){
+               if (n>0){cont1++}
+               if (n<0){cont2++}
+            }
+        }
+        document.write("<p>Usted digitó" +cont1+ "números positivos <p>Usted digitó"+cont2+ "números negativos");
+    </script>
+</body>
+</html>
